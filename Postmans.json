@@ -1,0 +1,3821 @@
+{
+	"info": {
+		"_postman_id": "4da333c2-e554-4e05-9714-2b540eec0329",
+		"name": "Api Agencia Viajes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41094196"
+	},
+	"item": [
+		{
+			"name": "FlightController",
+			"item": [
+				{
+					"name": "createFlight",
+					"item": [
+						{
+							"name": "vuelo1-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo2-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo3-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo4-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo5-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo6-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo7-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo8-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo9-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo10-éxito",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo11-ya existe",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo12 -faltan datos",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo13 - destino faltante",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo14 - numero de vuelo faltante",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "editFlight",
+					"item": [
+						{
+							"name": "edit Ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Flight 202\",\r\n    \"flightNumber\": \"AA202\",\r\n    \"origin\": \"CDG\",\r\n    \"destination\": \"JFK\",\r\n    \"businessSeatsQ\": 15,\r\n    \"economySeatsQ\": 150,\r\n    \"businessSeatPrice\": 3000.0,\r\n    \"economySeatPrice\": 700.0,\r\n    \"date\": \"15-03-2025\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flights/edit/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flights",
+										"edit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit n_vuelo-existe",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Flight 202\",\r\n    \"flightNumber\": \"AA202\",\r\n    \"origin\": \"CDG\",\r\n    \"destination\": \"JFK\",\r\n    \"businessSeatsQ\": 15,\r\n    \"economySeatsQ\": 150,\r\n    \"businessSeatPrice\": 3000.0,\r\n    \"economySeatPrice\": 700.0,\r\n    \"date\": \"15-03-2025\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flights/edit/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flights",
+										"edit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit n_vuelo vacío",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Flight 202\",\r\n    \"flightNumber\": \"AA202\",\r\n    \"origin\": \"CDG\",\r\n    \"destination\": \"JFK\",\r\n    \"businessSeatsQ\": 15,\r\n    \"economySeatsQ\": 150,\r\n    \"businessSeatPrice\": 3000.0,\r\n    \"economySeatPrice\": 700.0,\r\n    \"date\": \"15-03-2025\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flights/edit/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flights",
+										"edit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit destino vacío",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Flight 202\",\r\n    \"flightNumber\": \"AA202\",\r\n    \"origin\": \"CDG\",\r\n    \"destination\": \"JFK\",\r\n    \"businessSeatsQ\": 15,\r\n    \"economySeatsQ\": 150,\r\n    \"businessSeatPrice\": 3000.0,\r\n    \"economySeatPrice\": 700.0,\r\n    \"date\": \"15-03-2025\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flights/edit/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flights",
+										"edit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "listFlights",
+					"item": [
+						{
+							"name": "listaVuelos",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "findFlightById",
+					"item": [
+						{
+							"name": "vueloEncontrado",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "vuelo no existe",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DeleteFlight",
+					"item": [
+						{
+							"name": "borrar",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "borrar no existe",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "findFlightByParam",
+					"item": [
+						{
+							"name": "listOk",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "list No existe",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "FlightBookingController",
+			"item": [
+				{
+					"name": "create",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"15-03-2024\",\r\n  \"peopleQ\": 1,\r\n  \"passengersIds\": [9],\r\n  \"origin\": \"Madrid\",\r\n  \"destination\": \"Barcelona\",\r\n  \"touristSeats\": 1,\r\n  \"bussinessSeats\": 0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"15-03-2024\",\r\n  \"peopleQ\": 1,\r\n  \"passengersIds\": [9],\r\n  \"origin\": \"Madrid\",\r\n  \"destination\": \"Barcelona\",\r\n  \"touristSeats\": 1,\r\n  \"bussinessSeats\": 0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3 -Ok, intercambio origen-destino",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"15-03-2024\",\r\n  \"peopleQ\": 1,\r\n  \"passengersIds\": [9],\r\n  \"origin\": \"Madrid\",\r\n  \"destination\": \"Barcelona\",\r\n  \"touristSeats\": 1,\r\n  \"bussinessSeats\": 0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-ok-intercambio origen-destino",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"15-03-2024\",\r\n  \"peopleQ\": 1,\r\n  \"passengersIds\": [9],\r\n  \"origin\": \"Madrid\",\r\n  \"destination\": \"Barcelona\",\r\n  \"touristSeats\": 1,\r\n  \"bussinessSeats\": 0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5-error, no hay vuelos",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"15-03-2024\",\r\n  \"peopleQ\": 1,\r\n  \"passengersIds\": [9],\r\n  \"origin\": \"Madrid\",\r\n  \"destination\": \"Barcelona\",\r\n  \"touristSeats\": 1,\r\n  \"bussinessSeats\": 0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "edit",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"01-04-2024\",\r\n  \"peopleQ\": 1,\r\n  \"passengersIds\": [9],\r\n  \"origin\": \"París\",\r\n  \"destination\": \"Londres\",\r\n  \"touristSeats\": 1,\r\n  \"bussinessSeats\": 0\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/edit/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"edit",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "1-error - id no existe.",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"01-04-2024\",\r\n  \"peopleQ\": 1,\r\n  \"passengersIds\": [9],\r\n  \"origin\": \"París\",\r\n  \"destination\": \"Londres\",\r\n  \"touristSeats\": 1,\r\n  \"bussinessSeats\": 0\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/edit/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"edit",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-error id no existe",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/flight-booking/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"flight-booking",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "All",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ById",
+					"item": [
+						{
+							"name": "2- byId",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "HotelController",
+			"item": [
+				{
+					"name": "CreateHotels",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"HTL001\",\r\n  \"name\": \"Hotel Sol\",\r\n  \"place\": \"Madrid\",\r\n  \"singleRoomsQ\": 50,\r\n  \"doubleRoomsQ\": 75,\r\n  \"simpleRoomPrice\": 100.0,\r\n  \"doubleRoomPrice\": 150.0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"HTL001\",\r\n  \"name\": \"Hotel Sol\",\r\n  \"place\": \"Madrid\",\r\n  \"singleRoomsQ\": 50,\r\n  \"doubleRoomsQ\": 75,\r\n  \"simpleRoomPrice\": 100.0,\r\n  \"doubleRoomPrice\": 150.0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"HTL003\",\r\n  \"name\": \"Hotel Estrella\",\r\n  \"place\": \"Valencia\",\r\n  \"singleRoomsQ\": 40,\r\n  \"doubleRoomsQ\": 65,\r\n  \"simpleRoomPrice\": 90.0,\r\n  \"doubleRoomPrice\": 140.0\r\n}\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"HTL004\",\r\n  \"name\": \"Hotel Mar\",\r\n  \"place\": \"Sevilla\",\r\n  \"singleRoomsQ\": 70,\r\n  \"doubleRoomsQ\": 85,\r\n  \"simpleRoomPrice\": 120.0,\r\n  \"doubleRoomPrice\": 170.0\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"HTL005\",\r\n  \"name\": \"Hotel Cielo\",\r\n  \"place\": \"Bilbao\",\r\n  \"singleRoomsQ\": 55,\r\n  \"doubleRoomsQ\": 70,\r\n  \"simpleRoomPrice\": 105.0,\r\n  \"doubleRoomPrice\": 155.0\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6-campos vacios",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"\",\r\n  \"name\": \"Hotel Nube\",\r\n  \"place\": \"Granada\",\r\n  \"singleRoomsQ\": 50,\r\n  \"doubleRoomsQ\": 75,\r\n  \"simpleRoomPrice\": 100.0,\r\n  \"doubleRoomPrice\": 150.0\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "7-campos duplicados",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"\",\r\n  \"name\": \"Hotel Nube\",\r\n  \"place\": \"Granada\",\r\n  \"singleRoomsQ\": 50,\r\n  \"doubleRoomsQ\": 75,\r\n  \"simpleRoomPrice\": 100.0,\r\n  \"doubleRoomPrice\": 150.0\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"new"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "editHotels",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"HTL001\",\r\n  \"name\": \"Hotel Sol Actualizado\",\r\n  \"place\": \"Madrid\",\r\n  \"singleRoomsQ\": 55,\r\n  \"doubleRoomsQ\": 80,\r\n  \"simpleRoomPrice\": 110.0,\r\n  \"doubleRoomPrice\": 160.0\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-campos vacíos",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"\",\r\n  \"name\": \"Hotel Luna Actualizado\",\r\n  \"place\": \"Barcelona\",\r\n  \"singleRoomsQ\": 60,\r\n  \"doubleRoomsQ\": 80,\r\n  \"simpleRoomPrice\": 110.0,\r\n  \"doubleRoomPrice\": 160.0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3-campos duplicados",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hotelCode\": \"\",\r\n  \"name\": \"Hotel Luna Actualizado\",\r\n  \"place\": \"Barcelona\",\r\n  \"singleRoomsQ\": 60,\r\n  \"doubleRoomsQ\": 80,\r\n  \"simpleRoomPrice\": 110.0,\r\n  \"doubleRoomPrice\": 160.0\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2 -id no existe.",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "listarTodos",
+					"item": [
+						{
+							"name": "listartodos",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "findById",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-eliminado",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/hotels/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"hotels",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "RoomBookingController",
+			"item": [
+				{
+					"name": "create",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"15-03-2025\",\r\n  \"dateTo\": \"20-03-2025\",\r\n  \"nights\": 5,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [15, 18],\r\n  \"doubleRoomQ\": 0,\r\n  \"singleRoomQ\": 2,\r\n  \"destination\": \"Sevilla\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"02-03-2025\",\r\n  \"dateTo\": \"06-03-2025\",\r\n  \"nights\": 4,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [3, 4],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Barcelona\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"02-03-2025\",\r\n  \"dateTo\": \"06-03-2025\",\r\n  \"nights\": 4,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [3, 4],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Barcelona\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/roomBooking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"roomBooking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"15-03-2025\",\r\n  \"dateTo\": \"20-03-2025\",\r\n  \"nights\": 5,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [7, 8],\r\n  \"doubleRoomQ\": 0,\r\n  \"singleRoomQ\": 2,\r\n  \"destination\": \"Sevilla\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-ok, para posterior borrado",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"02-03-2025\",\r\n  \"dateTo\": \"06-03-2025\",\r\n  \"nights\": 4,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [9, 10],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Bilbao\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2- destino no existe",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"01-03-2025\",\r\n  \"dateTo\": \"05-03-2025\",\r\n  \"nights\": 4,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [1, 2],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Paris\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3 - fechas del pasado",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"01-02-2025\",\r\n  \"dateTo\": \"05-02-2025\",\r\n  \"nights\": 4,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [1, 2],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Madrid\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-fechas no disponibles",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"01-04-2025\",\r\n  \"dateTo\": \"05-04-2025\",\r\n  \"nights\": 4,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [1, 2],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Madrid\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"new"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/delete/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"delete",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-no existe id",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/delete/10000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"delete",
+										"10000"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "edit",
+					"item": [
+						{
+							"name": "editOk",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"01-03-2025\",\r\n  \"dateTo\": \"08-03-2025\",\r\n  \"nights\": 5,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [5, 6],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Sevilla\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/edit/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"edit",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit error",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"dateFrom\": \"01-03-2025\",\r\n  \"dateTo\": \"08-03-2025\",\r\n  \"nights\": 5,\r\n  \"peopleQ\": 2,\r\n  \"passengersIds\": [5, 6],\r\n  \"doubleRoomQ\": 1,\r\n  \"singleRoomQ\": 0,\r\n  \"destination\": \"Cuenca\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/edit/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"edit",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "list all",
+					"item": [
+						{
+							"name": "listAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "listById",
+					"item": [
+						{
+							"name": "listbyId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "listbyId Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/room-booking/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"room-booking",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PassengerController",
+			"item": [
+				{
+					"name": "create",
+					"item": [
+						{
+							"name": "1-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Juan\",\r\n  \"lastName\": \"Pérez\",\r\n  \"dni\": \"12345678\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Juan\",\r\n  \"lastName\": \"Pérez\",\r\n  \"dni\": \"12345678\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Carlos\",\r\n  \"lastName\": \"Rodríguez\",\r\n  \"dni\": \"ABC1234567\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Ana\",\r\n  \"lastName\": \"García\",\r\n  \"dni\": \"DNI7777777\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Pedro\",\r\n  \"lastName\": \"Fernández\",\r\n  \"dni\": \"99999999\"\r\n}\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Lucía\",\r\n  \"lastName\": \"Martínez\",\r\n  \"dni\": \"LM202345\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "7-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Andrés\",\r\n  \"lastName\": \"Ramírez\",\r\n  \"dni\": \"7777777X\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "8-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Sofía\",\r\n  \"lastName\": \"Torres\",\r\n  \"dni\": \"44444444T\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "9-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Marta\",\r\n  \"lastName\": \"Herrera\",\r\n  \"dni\": \"1111-2222\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "10-OK",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Marta\",\r\n  \"lastName\": \"Herrera\",\r\n  \"dni\": \"1111-2222\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "11-nombre vacío",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Marta\",\r\n  \"lastName\": \"Herrera\",\r\n  \"dni\": \"1111-2222\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "12 - dni corto",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Laura\",\r\n  \"lastName\": \"Núñez\",\r\n  \"dni\": \"123\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"new"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/passengers/delete/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"delete",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-id no existe",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/passengers/delete/12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"delete",
+										"12"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"María\",\r\n  \"lastName\": \"López Actualizado\",\r\n  \"dni\": \"87654321X\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/edit/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"edit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-no validación",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"María\",\r\n  \"lastName\": \"López Actualizado\",\r\n  \"dni\": \"87654321X\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/passengers/edit/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"edit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "findByid",
+					"item": [
+						{
+							"name": "1-OK",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/passengers/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"passengers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2- error 404",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "All passengers",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "RoomsController",
+			"item": [
+				{
+					"name": "create",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 1,\r\n    \"disponibilityDateFrom\": \"01-03-2025\",\r\n    \"disponibilityDateTo\": \"10-03-2025\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"SINGLE\",\r\n    \"hotelId\": 1,\r\n    \"disponibilityDateFrom\": \"15-03-2025\",\r\n    \"disponibilityDateTo\": \"20-03-2025\"\r\n}\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 2,\r\n    \"disponibilityDateFrom\": \"01-03-2025\",\r\n    \"disponibilityDateTo\": \"10-03-2025\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 2,\r\n    \"disponibilityDateFrom\": \"01-03-2025\",\r\n    \"disponibilityDateTo\": \"10-03-2025\"\r\n}\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 3,\r\n    \"disponibilityDateFrom\": \"01-03-2025\",\r\n    \"disponibilityDateTo\": \"10-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 3,\r\n    \"disponibilityDateFrom\": \"01-03-2025\",\r\n    \"disponibilityDateTo\": \"10-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "7-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 3,\r\n    \"disponibilityDateFrom\": \"01-03-2025\",\r\n    \"disponibilityDateTo\": \"10-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "8-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"SINGLE\",\r\n    \"hotelId\": 4,\r\n    \"disponibilityDateFrom\": \"15-03-2025\",\r\n    \"disponibilityDateTo\": \"20-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "9-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"SINGLE\",\r\n    \"hotelId\": 4,\r\n    \"disponibilityDateFrom\": \"15-03-2025\",\r\n    \"disponibilityDateTo\": \"20-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "10-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"SINGLE\",\r\n    \"hotelId\": 4,\r\n    \"disponibilityDateFrom\": \"15-03-2025\",\r\n    \"disponibilityDateTo\": \"20-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "11-no existe idHotel",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"SINGLE\",\r\n    \"hotelId\": 4,\r\n    \"disponibilityDateFrom\": \"15-03-2025\",\r\n    \"disponibilityDateTo\": \"20-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "12 id obligatoria",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"SINGLE\",\r\n    \"hotelId\": 4,\r\n    \"disponibilityDateFrom\": \"15-03-2025\",\r\n    \"disponibilityDateTo\": \"20-03-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "edit",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 1,\r\n    \"disponibilityDateFrom\": \"05-03-2025\",\r\n    \"disponibilityDateTo\": \"15-03-2025\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/edit?roomId=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"edit"
+									],
+									"query": [
+										{
+											"key": "roomId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-habitación no existe",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomType\": \"DOUBLE\",\r\n    \"hotelId\": 1,\r\n    \"disponibilityDateFrom\": \"05-03-2025\",\r\n    \"disponibilityDateTo\": \"15-03-2025\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/edit?roomId=55",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"edit"
+									],
+									"query": [
+										{
+											"key": "roomId",
+											"value": "55"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/delete/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"delete",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-no existe",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "luis",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/delete/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"delete",
+										"10"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Room by id",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-id no existe",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "All Rooms",
+					"item": [
+						{
+							"name": "all Rooms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Rooms By Hotel",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/hotel/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"hotel",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-hotel no existe",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/hotel/9999",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"hotel",
+										"9999"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AvailableRoomsByHotel",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/availability?hotelId=2&fromDate=01-03-2025&toDate=10-03-2025",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"availability"
+									],
+									"query": [
+										{
+											"key": "hotelId",
+											"value": "2"
+										},
+										{
+											"key": "fromDate",
+											"value": "01-03-2025"
+										},
+										{
+											"key": "toDate",
+											"value": "10-03-2025"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2 - no hay fechas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/availability?hotelId=1&fromDate=10-03-2020&toDate=01-03-2020",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"availability"
+									],
+									"query": [
+										{
+											"key": "hotelId",
+											"value": "1"
+										},
+										{
+											"key": "fromDate",
+											"value": "10-03-2020"
+										},
+										{
+											"key": "toDate",
+											"value": "01-03-2020"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ByDestinyAndDates",
+					"item": [
+						{
+							"name": "1-ok",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/availability-by-destination?destination=Barcelona&fromDate=01-03-2025&toDate=10-03-2025",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"availability-by-destination"
+									],
+									"query": [
+										{
+											"key": "destination",
+											"value": "Barcelona"
+										},
+										{
+											"key": "fromDate",
+											"value": "01-03-2025"
+										},
+										{
+											"key": "toDate",
+											"value": "10-03-2025"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2-No hay",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/agency/rooms/availability-by-destination?destination=Barcelona&fromDate=01-03-2025&toDate=10-03-2025",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"agency",
+										"rooms",
+										"availability-by-destination"
+									],
+									"query": [
+										{
+											"key": "destination",
+											"value": "Barcelona"
+										},
+										{
+											"key": "fromDate",
+											"value": "01-03-2025"
+										},
+										{
+											"key": "toDate",
+											"value": "10-03-2025"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
